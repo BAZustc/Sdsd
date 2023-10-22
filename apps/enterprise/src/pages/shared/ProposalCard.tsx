@@ -158,6 +158,7 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
   return (
     <Wrapper>
       <InternalLink to={`/dao/${dao.address}/proposals/${proposal.id}`}>
+            <div className={classNames(styles.btn)}>
         <Content kind="secondary">
           <SeparatedByLine fullHeight gap={20}>
             <VStack style={{ flex: 1 }} gap={20}>
@@ -186,6 +187,7 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
             <ProgressBar total={totalVotes} yes={proposal.yesVotes} no={proposal.noVotes} />
           </ProgressBarPosition>
         </Content>
+              </div>
       </InternalLink>
       {showDao && (
         <DaoLinkOverlay>
