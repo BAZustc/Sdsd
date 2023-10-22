@@ -86,7 +86,7 @@ return (
     actionPlacerStyles={{
       right: 20,
     }}
-        action={<FavouriteToggle dao={dao} />}
+        action={null}
   />
 );
 };
