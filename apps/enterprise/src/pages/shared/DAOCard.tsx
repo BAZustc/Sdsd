@@ -84,7 +84,7 @@ return (
       </InternalLink>
     )}
     actionPlacerStyles={{
-      right: 20,
+      right: 0,
     }}
         action={null}
   />
