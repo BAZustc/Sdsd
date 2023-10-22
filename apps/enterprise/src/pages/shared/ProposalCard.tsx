@@ -156,7 +156,6 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
   );
 
   return (
-    <div className={classNames(styles.btn)}>
     <Wrapper>
       <InternalLink to={`/dao/${dao.address}/proposals/${proposal.id}`}>
         <Content kind="secondary">
@@ -194,6 +193,5 @@ export const ProposalCard = ({ showDao }: ProposalCardProps) => {
         </DaoLinkOverlay>
       )}
     </Wrapper>
-      </div>
   );
 };
